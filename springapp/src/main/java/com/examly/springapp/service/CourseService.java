@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.examly.springapp.model.Course;
 import com.examly.springapp.model.Course;
 import com.examly.springapp.model.Course;
+import com.examly.springapp.model.Course;
 import com.examly.springapp.repository.CourseRepo;
 @Service
 public class CourseService {
@@ -23,6 +24,16 @@ public class CourseService {
      public Course getCourseById(long CourseId){
         return courseRepo.findById(CourseId).orElseThrow();
     }
+
+      public Course updateCourse(long CourseId, Course course){
+    if(courseRepo.existsById(CourseId)){
+       course.setCourseId(CourseId);
+       return courseRepo.save(course);
+    }
+    throw new RuntimeException();
+
+
+   }
 
     
 }

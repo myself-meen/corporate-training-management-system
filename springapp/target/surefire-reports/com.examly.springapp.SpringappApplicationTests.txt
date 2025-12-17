@@ -1,92 +1,76 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 79, Failures: 22, Errors: 0, Skipped: 0, Time elapsed: 5.615 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
-com.examly.springapp.SpringappApplicationTests.Day6_test_InstructorController_Has_PutMapping  Time elapsed: 0.008 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: ❌ No @PutMapping method found in InstructorController ==> expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.Day6_test_InstructorController_Has_PutMapping(SpringappApplicationTests.java:383)
-
-com.examly.springapp.SpringappApplicationTests.Day6_test_InstructorController_Has_DeleteMapping  Time elapsed: 0.003 s  <<< FAILURE!
+Tests run: 79, Failures: 18, Errors: 0, Skipped: 0, Time elapsed: 4.808 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+com.examly.springapp.SpringappApplicationTests.Day6_test_InstructorController_Has_DeleteMapping  Time elapsed: 0.008 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ No @DeleteMapping method found in InstructorController ==> expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day6_test_InstructorController_Has_DeleteMapping(SpringappApplicationTests.java:407)
 
-com.examly.springapp.SpringappApplicationTests.Day6_testGetAllInstructors_StatusNoContent  Time elapsed: 0.181 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_testGetAllInstructors_StatusNoContent  Time elapsed: 0.147 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<204> but was:<200>
 	at com.examly.springapp.SpringappApplicationTests.Day6_testGetAllInstructors_StatusNoContent(SpringappApplicationTests.java:430)
 
-com.examly.springapp.SpringappApplicationTests.Day8_testUpdateInstructor  Time elapsed: 0.012 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<405>
-	at com.examly.springapp.SpringappApplicationTests.Day8_testUpdateInstructor(SpringappApplicationTests.java:743)
-
-com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageNumberApplied  Time elapsed: 0.015 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageNumberApplied  Time elapsed: 0.01 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageNumberApplied(SpringappApplicationTests.java:754)
 
-com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageSizeApplied  Time elapsed: 0.008 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageSizeApplied  Time elapsed: 0.006 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageSizeApplied(SpringappApplicationTests.java:764)
 
-com.examly.springapp.SpringappApplicationTests.Day9_testPagination_SortingPresent  Time elapsed: 0.007 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day9_testPagination_SortingPresent  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_SortingPresent(SpringappApplicationTests.java:774)
 
-com.examly.springapp.SpringappApplicationTests.Day9_testPagination_ContentArrayExists  Time elapsed: 0.052 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day9_testPagination_ContentArrayExists  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_ContentArrayExists(SpringappApplicationTests.java:785)
 
-com.examly.springapp.SpringappApplicationTests.Day9_testPagination_TotalElementsExists  Time elapsed: 0.007 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day9_testPagination_TotalElementsExists  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_TotalElementsExists(SpringappApplicationTests.java:795)
 
-com.examly.springapp.SpringappApplicationTests.Day9_testPagination_TotalPagesExists  Time elapsed: 0.007 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day9_testPagination_TotalPagesExists  Time elapsed: 0.005 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_TotalPagesExists(SpringappApplicationTests.java:805)
 
-com.examly.springapp.SpringappApplicationTests.Day10_testUpdateCourse  Time elapsed: 0.005 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<405>
-	at com.examly.springapp.SpringappApplicationTests.Day10_testUpdateCourse(SpringappApplicationTests.java:858)
-
-com.examly.springapp.SpringappApplicationTests.Day10_testUpdateStudent  Time elapsed: 0.004 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<405>
-	at com.examly.springapp.SpringappApplicationTests.Day10_testUpdateStudent(SpringappApplicationTests.java:911)
-
-com.examly.springapp.SpringappApplicationTests.Day11_testGetCoursesByInstructor  Time elapsed: 0.007 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day11_testGetCoursesByInstructor  Time elapsed: 0.005 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day11_testGetCoursesByInstructor(SpringappApplicationTests.java:923)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel  Time elapsed: 0.006 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel(SpringappApplicationTests.java:934)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testGetStudentsByEmail  Time elapsed: 0.006 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testGetStudentsByEmail  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetStudentsByEmail(SpringappApplicationTests.java:946)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel_NotFound  Time elapsed: 0.006 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel_NotFound  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<204> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel_NotFound(SpringappApplicationTests.java:958)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization  Time elapsed: 0.007 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization(SpringappApplicationTests.java:968)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization_NotFound  Time elapsed: 0.007 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization_NotFound  Time elapsed: 0.005 s  <<< FAILURE!
 java.lang.AssertionError: Response content expected:<No instructors found with specialization: Biology> but was:<>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization_NotFound(SpringappApplicationTests.java:980)
 
-com.examly.springapp.SpringappApplicationTests.Day13_test_exception_Directory_Exists  Time elapsed: 0.004 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day13_test_exception_Directory_Exists  Time elapsed: 0.003 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day13_test_exception_Directory_Exists(SpringappApplicationTests.java:986)
 
-com.examly.springapp.SpringappApplicationTests.Day13_test_GlobalException_File_Exists  Time elapsed: 0.004 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day13_test_GlobalException_File_Exists  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day13_test_GlobalException_File_Exists(SpringappApplicationTests.java:992)
 
-com.examly.springapp.SpringappApplicationTests.Day14_test_configuration_Directory_Exists  Time elapsed: 0.004 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day14_test_configuration_Directory_Exists  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day14_test_configuration_Directory_Exists(SpringappApplicationTests.java:998)
 
-com.examly.springapp.SpringappApplicationTests.Day15_testAOPLogFileExists  Time elapsed: 0.004 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day15_testAOPLogFileExists  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day15_testAOPLogFileExists(SpringappApplicationTests.java:1004)
 

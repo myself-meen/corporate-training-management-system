@@ -24,6 +24,18 @@ public class InstructorService {
     public Instructor getInstructorById(long instructorId){
         return instructorRepo.findById(instructorId).orElseThrow();
     }
+    
+   public Instructor updateInstructor(long instructorId, Instructor instructor){
+    if(instructorRepo.existsById(instructorId)){
+       instructor.setInstructorId(instructorId);
+       return instructorRepo.save(instructor);
+    }
+    throw new RuntimeException();
+
+
+   }
+    
+
 
     
 }

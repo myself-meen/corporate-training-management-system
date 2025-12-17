@@ -8,6 +8,7 @@ import java.util.*;
 
 import com.examly.springapp.model.Student;
 import com.examly.springapp.model.Student;
+import com.examly.springapp.model.Student;
 import com.examly.springapp.repository.StudentRepo;
 import com.examly.springapp.service.StudentService;
 
@@ -31,6 +32,11 @@ public class StudentController {
     public ResponseEntity<Student> getStudentById(@PathVariable long id) {
         return new ResponseEntity<>(studentService.getStudentById(id), HttpStatus.OK);
         
+    }
+    @PutMapping("/{id}")
+    public ResponseEntity<Student>updateStudent(@PathVariable long id, @RequestBody Student student){
+        return new ResponseEntity<>(studentService.updateStudent(id, student), HttpStatus.OK);
+
     }
 
 

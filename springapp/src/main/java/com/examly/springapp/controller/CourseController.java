@@ -9,6 +9,7 @@ import java.util.*;
 import com.examly.springapp.model.Course;
 import com.examly.springapp.model.Course;
 import com.examly.springapp.model.Course;
+import com.examly.springapp.model.Course;
 import com.examly.springapp.repository.CourseRepo;
 import com.examly.springapp.service.CourseService;
 
@@ -32,6 +33,11 @@ public class CourseController {
     public ResponseEntity<Course> getCourseById(@PathVariable long id) {
         return new ResponseEntity<>(courseService.getCourseById(id), HttpStatus.OK);
         
+    }
+    @PutMapping("/{id}")
+    public ResponseEntity<Course>updateCourse(@PathVariable long id, @RequestBody Course course){
+        return new ResponseEntity<>(courseService.updateCourse(id, course), HttpStatus.OK);
+
     }
 
     // @GetMapping

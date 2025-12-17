@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.examly.springapp.model.Instructor;
 import com.examly.springapp.model.Student;
 import com.examly.springapp.model.Student;
 import com.examly.springapp.model.Student;
@@ -24,6 +25,16 @@ public class StudentService {
      public Student getStudentById(long StudentId){
         return studentRepo.findById(StudentId).orElseThrow();
     }
+
+      public Student updateStudent(long StudentId, Student student){
+    if(studentRepo.existsById(StudentId)){
+       student.setStudentId(StudentId);
+       return studentRepo.save(student);
+    }
+    throw new RuntimeException();
+
+
+   }
 
 
 }

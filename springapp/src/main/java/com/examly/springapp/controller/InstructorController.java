@@ -44,7 +44,13 @@ public class InstructorController {
         
     }
 
-    // @PutMapping("/{id}")
+
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Instructor>updateInstructor(@PathVariable long id, @RequestBody Instructor instructor){
+        return new ResponseEntity<>(instructorService.updateInstructor(id, instructor), HttpStatus.OK);
+
+    }
     // public Instructor updateInstructor(@PathVariable long id, @RequestBody Instructor instructor) {
     //     instructor.setInstructorId(id);
     //     instructorRepo.save(instructor);
