@@ -14,4 +14,13 @@
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/repository/InstructorRepo.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/repository/ModuleRepo.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/repository/StudentRepo.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/CourseService.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/CourseServiceImpl.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/EnrollmentService.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/EnrollmentServiceImpl.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/InstructorService.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/InstructorServiceImpl.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/ModuleService.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/ModuleServiceImpl.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/StudentService.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/StudentServiceImpl.java

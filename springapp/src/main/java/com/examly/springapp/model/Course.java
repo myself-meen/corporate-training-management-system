@@ -1,11 +1,14 @@
 package com.examly.springapp.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Course {
 @Id
+@GeneratedValue(strategy=GenerationType.AUTO)
 private long courseId;
 private String courseName;
 private String description;
@@ -42,7 +45,17 @@ public void setPrice(double price) {
     this.price = price;
 }
 public Course() {
+
 }
 
 
+
+
+public Course(long courseId, String courseName, String description, int duration, double price) {
+    this.courseId = courseId;
+    this.courseName = courseName;
+    this.description = description;
+    this.duration = duration;
+    this.price = price;
+}
 }

@@ -1,51 +1,60 @@
 package com.examly.springapp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 import com.examly.springapp.model.Instructor;
 import com.examly.springapp.repository.InstructorRepo;
+import com.examly.springapp.service.InstructorService;
 
 @RestController
+@RequestMapping("/api/instructors")
 public class InstructorController {
 
     @Autowired
-    private InstructorRepo instructorRepo;
+    private InstructorService instructorService;
 
-    @PostMapping("/api/instructors")
-    public Instructor createInstructor(@RequestBody Instructor instructor) {
-        instructorRepo.save(instructor);
-        return instructor;
+    @PostMapping
+    public ResponseEntity<Instructor> AddInstructor(@RequestBody Instructor instructor) {
+        
+        return new ResponseEntity<>(instructorService.AddInstructor(instructor), HttpStatus.CREATED);
     }
 
-    @GetMapping("/api/instructors")
-    public ResponseEntity<List<Instructor>> getAllInstructors() {
-        List<Instructor> instructors = instructorRepo.findAll();
-
-        if (instructors.isEmpty()) {
-            return ResponseEntity.noContent().build(); // ✅ fixes test 34
-        }
-        return ResponseEntity.ok(instructors);
+    @GetMapping
+    public ResponseEntity<List<Instructor>>getAllInstructors(){
+        return new ResponseEntity<List<Instructor>>(instructorService.getAllInstructors(),HttpStatus.OK);
     }
 
-    @GetMapping("/api/instructors/{id}")
-    public Instructor getInstructorById(@PathVariable long id) {
-        return instructorRepo.findById(id).orElse(null);
+    // @GetMapping
+    // public ResponseEntity<List<Instructor>> getAllInstructors() {
+    //     List<Instructor> instructors = instructorRepo.findAll();
+
+    //     if (instructors.isEmpty()) {
+    //         return ResponseEntity.noContent().build(); 
+    //     }
+    //     return ResponseEntity.ok(instructors);
+    // }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Instructor> getInstructorById(@PathVariable long id) {
+        return new ResponseEntity<>(instructorService.getInstructorById(id), HttpStatus.OK);
+        
     }
 
-    @PutMapping("/api/instructors/{id}")
-    public Instructor updateInstructor(@PathVariable long id, @RequestBody Instructor instructor) {
-        instructor.setInstructorId(id);
-        instructorRepo.save(instructor);
-        return instructor;
-    }
+    // @PutMapping("/{id}")
+    // public Instructor updateInstructor(@PathVariable long id, @RequestBody Instructor instructor) {
+    //     instructor.setInstructorId(id);
+    //     instructorRepo.save(instructor);
+    //     return instructor;
+    // }
 
-    @DeleteMapping("/api/instructors/{id}")
-    public void deleteInstructor(@PathVariable long id) {
-        instructorRepo.deleteById(id);
-    }
+    // @DeleteMapping("/{id}")
+    // public void deleteInstructor(@PathVariable long id) {
+    //     instructorRepo.deleteById(id);
+    // }
 }
 
 

@@ -1,40 +1,55 @@
 package com.examly.springapp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 import com.examly.springapp.model.Course;
+import com.examly.springapp.model.Course;
+import com.examly.springapp.model.Course;
 import com.examly.springapp.repository.CourseRepo;
+import com.examly.springapp.service.CourseService;
 
 @RestController
+@RequestMapping("/api/courses")
 public class CourseController {
 
     @Autowired
-    private CourseRepo courseRepo;
+    private CourseService courseService;
 
-    @PostMapping("/api/courses")
-    public Course createCourse(@RequestBody Course course) {
-        courseRepo.save(course);
-        return course;
+   @PostMapping
+    public ResponseEntity<Course> AddCourse(@RequestBody Course course) {
+        
+        return new ResponseEntity<>(courseService.AddCourse(course), HttpStatus.CREATED);
+    }
+    @GetMapping
+    public ResponseEntity<List<Course>>getAllCourses(){
+        return new ResponseEntity<List<Course>>(courseService.getAllCourses(),HttpStatus.OK);
+    }
+     @GetMapping("/{id}")
+    public ResponseEntity<Course> getCourseById(@PathVariable long id) {
+        return new ResponseEntity<>(courseService.getCourseById(id), HttpStatus.OK);
+        
     }
 
-    @GetMapping("/api/courses")
-    public List<Course> getAllCourses() {
-        return courseRepo.findAll();
-    }
+    // @GetMapping
+    // public List<Course> getAllCourses() {
+    //     return courseRepo.findAll();
+    // }
 
-    @GetMapping("/api/courses/{id}")
-    public Course getCourseById(@PathVariable long id) {
-        return courseRepo.findById(id).orElse(null);
-    }
+    // @GetMapping("/{id}")
+    // public Course getCourseById(@PathVariable long id) {
+    //     return courseRepo.findById(id).orElse(null);
+    // }
 
-    @PutMapping("/api/courses/{id}")
-    public Course updateCourse(@PathVariable long id, @RequestBody Course course) {
-        course.setCourseId(id);
-        courseRepo.save(course);
-        return course;
-    }
+    // @PutMapping("/{id}")
+    // public Course updateCourse(@PathVariable long id, @RequestBody Course course) {
+    //     course.setCourseId(id);
+    //     courseRepo.save(course);
+    //     return course;
+    // }
 }
 
 
