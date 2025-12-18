@@ -1,6 +1,7 @@
 package com.examly.springapp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -61,6 +62,19 @@ public class InstructorController {
     // public void deleteInstructor(@PathVariable long id) {
     //     instructorRepo.deleteById(id);
     // }
+      @GetMapping("/page/{pageNo}/{pageSize}")
+    public ResponseEntity<Page<Instructor>> getInstructorsWithPagination(
+            @PathVariable int pageNo,
+            @PathVariable int pageSize) {
+
+        return new ResponseEntity<>(
+                instructorService.getInstructorsWithPagination(pageNo, pageSize),
+                HttpStatus.OK
+        );
+    }
+
+
+
 }
 
 

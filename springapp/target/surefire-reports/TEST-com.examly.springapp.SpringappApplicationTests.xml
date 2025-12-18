@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.examly.springapp.SpringappApplicationTests" time="4.808" tests="79" errors="0" skipped="0" failures="18">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.examly.springapp.SpringappApplicationTests" time="5.891" tests="79" errors="0" skipped="0" failures="12">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/coder/project/workspace/springapp/target/surefire/surefirebooter799302639076385259.jar /home/coder/project/workspace/springapp/target/surefire 2025-12-17T16-03-34_197-jvmRun1 surefire16263334522946389163tmp surefire_08543133397645771654tmp"/>
+    <property name="sun.java.command" value="/home/coder/project/workspace/springapp/target/surefire/surefirebooter4048247395997773622.jar /home/coder/project/workspace/springapp/target/surefire 2025-12-18T14-10-24_651-jvmRun1 surefire11292509270361981519tmp surefire_017249766383157605745tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/coder/project/workspace/springapp/target/test-classes:/home/coder/project/workspace/springapp/target/classes:/home/coder/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.4.12/spring-boot-starter-data-jpa-3.4.12.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.12/spring-boot-starter-3.4.12.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.12/spring-boot-starter-logging-3.4.12.jar:/home/coder/.m2/repository/ch/qos/logback/logback-classic/1.5.21/logback-classic-1.5.21.jar:/home/coder/.m2/repository/ch/qos/logback/logback-core/1.5.21/logback-core-1.5.21.jar:/home/coder/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/home/coder/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/home/coder/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/home/coder/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/coder/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.4.12/spring-boot-starter-jdbc-3.4.12.jar:/home/coder/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/home/coder/.m2/repository/org/springframework/spring-jdbc/6.2.14/spring-jdbc-6.2.14.jar:/home/coder/.m2/repository/org/hibernate/orm/hibernate-core/6.6.36.Final/hibernate-core-6.6.36.Final.jar:/home/coder/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/coder/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/coder/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/home/coder/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar:/home/coder/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/home/coder/.m2/repository/com/fasterxml/classmate/1.7.1/classmate-1.7.1.jar:/home/coder/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/coder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.6/jaxb-runtime-4.0.6.jar:/home/coder/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.6/jaxb-core-4.0.6.jar:/home/coder/.m2/repository/org/eclipse/angus/angus-activation/2.0.3/angus-activation-2.0.3.jar:/home/coder/.m2/repository/org/glassfish/jaxb/txw2/4.0.6/txw2-4.0.6.jar:/home/coder/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/coder/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/coder/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/coder/.m2/repository/org/springframework/data/spring-data-jpa/3.4.12/spring-data-jpa-3.4.12.jar:/home/coder/.m2/repository/org/springframework/data/spring-data-commons/3.4.12/spring-data-commons-3.4.12.jar:/home/coder/.m2/repository/org/springframework/spring-orm/6.2.14/spring-orm-6.2.14.jar:/home/coder/.m2/repository/org/springframework/spring-context/6.2.14/spring-context-6.2.14.jar:/home/coder/.m2/repository/org/springframework/spring-aop/6.2.14/spring-aop-6.2.14.jar:/home/coder/.m2/repository/org/springframework/spring-tx/6.2.14/spring-tx-6.2.14.jar:/home/coder/.m2/repository/org/springframework/spring-beans/6.2.14/spring-beans-6.2.14.jar:/home/coder/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/home/coder/.m2/repository/org/springframework/spring-aspects/6.2.14/spring-aspects-6.2.14.jar:/home/coder/.m2/repository/org/aspectj/aspectjweaver/1.9.25/aspectjweaver-1.9.25.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.12/spring-boot-starter-web-3.4.12.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.12/spring-boot-starter-json-3.4.12.jar:/home/coder/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.5/jackson-databind-2.18.5.jar:/home/coder/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.5/jackson-annotations-2.18.5.jar:/home/coder/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.5/jackson-core-2.18.5.jar:/home/coder/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.5/jackson-datatype-jdk8-2.18.5.jar:/home/coder/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.5/jackson-datatype-jsr310-2.18.5.jar:/home/coder/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.5/jackson-module-parameter-names-2.18.5.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.12/spring-boot-starter-tomcat-3.4.12.jar:/home/coder/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.49/tomcat-embed-core-10.1.49.jar:/home/coder/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.49/tomcat-embed-el-10.1.49.jar:/home/coder/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.49/tomcat-embed-websocket-10.1.49.jar:/home/coder/.m2/repository/org/springframework/spring-web/6.2.14/spring-web-6.2.14.jar:/home/coder/.m2/repository/io/micrometer/micrometer-observation/1.14.13/micrometer-observation-1.14.13.jar:/home/coder/.m2/repository/io/micrometer/micrometer-commons/1.14.13/micrometer-commons-1.14.13.jar:/home/coder/.m2/repository/org/springframework/spring-webmvc/6.2.14/spring-webmvc-6.2.14.jar:/home/coder/.m2/repository/org/springframework/spring-expression/6.2.14/spring-expression-6.2.14.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-devtools/3.4.12/spring-boot-devtools-3.4.12.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot/3.4.12/spring-boot-3.4.12.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.12/spring-boot-autoconfigure-3.4.12.jar:/home/coder/.m2/repository/com/mysql/mysql-connector-j/9.5.0/mysql-connector-j-9.5.0.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.12/spring-boot-starter-test-3.4.12.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-test/3.4.12/spring-boot-test-3.4.12.jar:/home/coder/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.12/spring-boot-test-autoconfigure-3.4.12.jar:/home/coder/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/coder/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.4/jakarta.xml.bind-api-4.0.4.jar:/home/coder/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/home/coder/.m2/repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/home/coder/.m2/repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/home/coder/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/home/coder/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/home/coder/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/home/coder/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/coder/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/coder/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/coder/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/coder/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/coder/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/coder/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/coder/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/coder/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/coder/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/home/coder/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/home/coder/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/coder/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/home/coder/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/home/coder/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/coder/.m2/repository/org/springframework/spring-core/6.2.14/spring-core-6.2.14.jar:/home/coder/.m2/repository/org/springframework/spring-jcl/6.2.14/spring-jcl-6.2.14.jar:/home/coder/.m2/repository/org/springframework/spring-test/6.2.14/spring-test-6.2.14.jar:/home/coder/.m2/repository/org/xmlunit/xmlunit-core/2.10.4/xmlunit-core-2.10.4.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="/home/coder/project/workspace/springapp/target/surefire/surefirebooter799302639076385259.jar"/>
+    <property name="surefire.real.class.path" value="/home/coder/project/workspace/springapp/target/surefire/surefirebooter4048247395997773622.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.17+10-Debian-1deb11u1"/>
     <property name="user.name" value="coder"/>
@@ -48,7 +48,7 @@
     <property name="user.dir" value="/home/coder/project/workspace/springapp"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="9712"/>
+    <property name="PID" value="3603"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
@@ -59,10 +59,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Day3_test_Controller_Directory_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.411">
-    <system-out><![CDATA[16:03:34.984 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.examly.springapp.SpringappApplicationTests]: SpringappApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:03:35.077 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.examly.springapp.SpringappApplication for test class com.examly.springapp.SpringappApplicationTests
-16:03:35.191 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+  <testcase name="Day3_test_Controller_Directory_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.444">
+    <system-out><![CDATA[14:10:25.553 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.examly.springapp.SpringappApplicationTests]: SpringappApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:10:25.698 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.examly.springapp.SpringappApplication for test class com.examly.springapp.SpringappApplicationTests
+14:10:25.849 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -73,20 +73,20 @@
 
  :: Spring Boot ::               (v3.4.12)
 
-2025-12-17T16:03:35.410Z  INFO 9712 --- [           main] c.e.springapp.SpringappApplicationTests  : Starting SpringappApplicationTests using Java 17.0.17 with PID 9712 (started by coder in /home/coder/project/workspace/springapp)
-2025-12-17T16:03:35.411Z  INFO 9712 --- [           main] c.e.springapp.SpringappApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-12-17T16:03:36.001Z  INFO 9712 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-17T16:03:36.049Z  INFO 9712 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 4 JPA repository interfaces.
-2025-12-17T16:03:36.330Z  INFO 9712 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-17T16:03:36.361Z  INFO 9712 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.36.Final
-2025-12-17T16:03:36.385Z  INFO 9712 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-12-17T16:03:36.652Z  INFO 9712 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-17T16:03:36.672Z  INFO 9712 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-17T16:03:36.816Z  INFO 9712 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31c7c281
-2025-12-17T16:03:36.818Z  INFO 9712 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-17T16:03:36.842Z  WARN 9712 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-17T16:03:36.843Z  WARN 9712 --- [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-12-17T16:03:36.860Z  INFO 9712 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-12-18T14:10:26.116Z  INFO 3603 --- [           main] c.e.springapp.SpringappApplicationTests  : Starting SpringappApplicationTests using Java 17.0.17 with PID 3603 (started by coder in /home/coder/project/workspace/springapp)
+2025-12-18T14:10:26.117Z  INFO 3603 --- [           main] c.e.springapp.SpringappApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-12-18T14:10:26.774Z  INFO 3603 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18T14:10:26.830Z  INFO 3603 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2025-12-18T14:10:27.160Z  INFO 3603 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18T14:10:27.203Z  INFO 3603 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-18T14:10:27.237Z  INFO 3603 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-18T14:10:27.445Z  INFO 3603 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18T14:10:27.471Z  INFO 3603 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-18T14:10:27.632Z  INFO 3603 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31c7c281
+2025-12-18T14:10:27.633Z  INFO 3603 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-18T14:10:27.653Z  WARN 3603 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-18T14:10:27.654Z  WARN 3603 --- [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-12-18T14:10:27.680Z  INFO 3603 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -94,7 +94,7 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-17T16:03:37.485Z  INFO 9712 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18T14:10:28.511Z  INFO 3603 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: alter table enrollment drop foreign key FKf77yp9lcpuxgy4qud1nw5mkp7
 Hibernate: alter table enrollment drop foreign key FK3cj0q1606uprpn1xhh6ct7pyy
 Hibernate: drop table if exists course
@@ -116,54 +116,54 @@ Hibernate: create table student_seq (next_val bigint) engine=InnoDB
 Hibernate: insert into student_seq values ( 1 )
 Hibernate: alter table enrollment add constraint FKf77yp9lcpuxgy4qud1nw5mkp7 foreign key (course_id_course_id) references course (course_id)
 Hibernate: alter table enrollment add constraint FK3cj0q1606uprpn1xhh6ct7pyy foreign key (student_id_student_id) references student (student_id)
-2025-12-17T16:03:37.767Z  INFO 9712 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-17T16:03:38.064Z  WARN 9712 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-17T16:03:38.362Z  INFO 9712 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-12-17T16:03:38.362Z  INFO 9712 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-12-17T16:03:38.364Z  INFO 9712 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2025-12-17T16:03:38.385Z  INFO 9712 --- [           main] c.e.springapp.SpringappApplicationTests  : Started SpringappApplicationTests in 3.201 seconds (process running for 3.976)
+2025-12-18T14:10:28.935Z  INFO 3603 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18T14:10:29.295Z  WARN 3603 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-18T14:10:29.699Z  INFO 3603 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-12-18T14:10:29.700Z  INFO 3603 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-12-18T14:10:29.702Z  INFO 3603 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-12-18T14:10:29.735Z  INFO 3603 --- [           main] c.e.springapp.SpringappApplicationTests  : Started SpringappApplicationTests in 3.898 seconds (process running for 4.827)
 ]]></system-out>
   </testcase>
-  <testcase name="Day3_test_Model_Directory_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="Day3_test_Service_Directory_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day3_test_Repository_Directory_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.005"/>
+  <testcase name="Day3_test_Model_Directory_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.005"/>
+  <testcase name="Day3_test_Service_Directory_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
+  <testcase name="Day3_test_Repository_Directory_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
   <testcase name="Day4_test_InstructorModel_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day4_test_CourseModel_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day4_test_Module_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
-  <testcase name="Day4_test_Student_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day4_test_Enrollment_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
+  <testcase name="Day4_test_CourseModel_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
+  <testcase name="Day4_test_Module_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day4_test_Student_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.012"/>
+  <testcase name="Day4_test_Enrollment_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
   <testcase name="Day4_test_Course_Has_Entity_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="test_Course_Has_Id_Annotation_On_Field" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="Day5_testInstructorRepo_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
+  <testcase name="test_Course_Has_Id_Annotation_On_Field" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day5_testInstructorRepo_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
   <testcase name="Day5_testCourseRepo_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
   <testcase name="Day5_testModuleRepo_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day5_testStudentRepo_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
+  <testcase name="Day5_testStudentRepo_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
   <testcase name="Day5_testEnrollmentRepo_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="Day5_test_CourseRepo_Has_Repository_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="Day5_test_InstructorRepo_Has_Repository_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
+  <testcase name="Day5_test_CourseRepo_Has_Repository_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day5_test_InstructorRepo_Has_Repository_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
   <testcase name="Day5_test_ModuleRepo_Has_Repository_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="Day5_test_StudentRepo_Has_Repository_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="Day5_test_EnrollmentRepo_Has_Repository_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="Day6_test_InstructorController_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
-  <testcase name="Day6_test_CourseController_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
-  <testcase name="Day6_test_ModuleController_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day6_test_StudentController_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day6_test_EnrollmentController_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day5_test_StudentRepo_Has_Repository_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day5_test_EnrollmentRepo_Has_Repository_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day6_test_InstructorController_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day6_test_CourseController_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day6_test_ModuleController_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
+  <testcase name="Day6_test_StudentController_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.03"/>
+  <testcase name="Day6_test_EnrollmentController_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
   <testcase name="Day6_test_InstructorController_Has_RestController_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="Day6_test_CourseController_Has_RestController_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
+  <testcase name="Day6_test_CourseController_Has_RestController_Annotation" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
   <testcase name="Day6_test_InstructorController_Has_PostMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day6_test_InstructorController_Has_GetMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
-  <testcase name="Day6_test_InstructorController_Has_PutMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
-  <testcase name="Day6_test_InstructorController_Has_DeleteMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.008">
+  <testcase name="Day6_test_InstructorController_Has_GetMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day6_test_InstructorController_Has_PutMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day6_test_InstructorController_Has_DeleteMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.009">
     <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: ❌ No @DeleteMapping method found in InstructorController ==> expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day6_test_InstructorController_Has_DeleteMapping(SpringappApplicationTests.java:407)
 ]]></failure>
   </testcase>
-  <testcase name="Day6_testCreateInstructor_NoBody_StatusBadRequest" classname="com.examly.springapp.SpringappApplicationTests" time="0.079">
-    <system-out><![CDATA[2025-12-17T16:03:39.003Z  WARN 9712 --- [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.examly.springapp.model.Instructor> com.examly.springapp.controller.InstructorController.AddInstructor(com.examly.springapp.model.Instructor)]
+  <testcase name="Day6_testCreateInstructor_NoBody_StatusBadRequest" classname="com.examly.springapp.SpringappApplicationTests" time="0.092">
+    <system-out><![CDATA[2025-12-18T14:10:30.455Z  WARN 3603 --- [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.examly.springapp.model.Instructor> com.examly.springapp.controller.InstructorController.AddInstructor(com.examly.springapp.model.Instructor)]
 ]]></system-out>
   </testcase>
-  <testcase name="Day6_testGetAllInstructors_StatusNoContent" classname="com.examly.springapp.SpringappApplicationTests" time="0.147">
+  <testcase name="Day6_testGetAllInstructors_StatusNoContent" classname="com.examly.springapp.SpringappApplicationTests" time="0.162">
     <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<204> but was:<200>
 	at com.examly.springapp.SpringappApplicationTests.Day6_testGetAllInstructors_StatusNoContent(SpringappApplicationTests.java:430)
 ]]></failure>
@@ -208,335 +208,112 @@ MockHttpServletResponse:
 ]]></system-out>
   </testcase>
   <testcase name="Day7_test_InstructorController_Has_RequestMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="Day7_test_InstructorController_Has_PathVariable" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
-  <testcase name="Day7_test_CourseController_Has_RequestMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
-  <testcase name="Day7_test_StudentController_Has_RequestMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
+  <testcase name="Day7_test_InstructorController_Has_PathVariable" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day7_test_CourseController_Has_RequestMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day7_test_StudentController_Has_RequestMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
   <testcase name="Day7_test_CourseController_Has_PathVariable" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
   <testcase name="Day7_test_StudentController_Has_PathVariable" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
-  <testcase name="Day7_test_EnrollmentController_Has_RequestMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day7_test_EnrollmentController_Has_RequestMapping" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
   <testcase name="Day8_test_InstructorService_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
   <testcase name="Day8_test_CourseService_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
-  <testcase name="Day8_test_ModuleService_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
-  <testcase name="Day8_test_StudentService_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
-  <testcase name="Day8_test_EnrollmentService_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day8_test_InstructorServiceImpl_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004"/>
+  <testcase name="Day8_test_ModuleService_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day8_test_StudentService_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
+  <testcase name="Day8_test_EnrollmentService_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
+  <testcase name="Day8_test_InstructorServiceImpl_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
   <testcase name="Day8_test_CourseServiceImpl_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
   <testcase name="Day8_test_ModuleServiceImpl_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day8_test_StudentServiceImpl_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day8_test_EnrollmentServiceImpl_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003"/>
-  <testcase name="Day8_testAddInstructor" classname="com.examly.springapp.SpringappApplicationTests" time="0.079">
+  <testcase name="Day8_test_StudentServiceImpl_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
+  <testcase name="Day8_test_EnrollmentServiceImpl_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002"/>
+  <testcase name="Day8_testAddInstructor" classname="com.examly.springapp.SpringappApplicationTests" time="0.094">
     <system-out><![CDATA[Hibernate: select next_val as id_val from instructor_seq for update
 Hibernate: update instructor_seq set next_val= ? where next_val=?
 Hibernate: insert into instructor (instructor_name,phone_number,specialization,instructor_id) values (?,?,?,?)
 ]]></system-out>
   </testcase>
-  <testcase name="Day8_testGetAllInstructors" classname="com.examly.springapp.SpringappApplicationTests" time="0.01">
+  <testcase name="Day8_testGetAllInstructors" classname="com.examly.springapp.SpringappApplicationTests" time="0.013">
     <system-out><![CDATA[Hibernate: select i1_0.instructor_id,i1_0.instructor_name,i1_0.phone_number,i1_0.specialization from instructor i1_0
 ]]></system-out>
   </testcase>
-  <testcase name="Day8_testGetInstructorById" classname="com.examly.springapp.SpringappApplicationTests" time="0.013">
+  <testcase name="Day8_testGetInstructorById" classname="com.examly.springapp.SpringappApplicationTests" time="0.018">
     <system-out><![CDATA[Hibernate: select i1_0.instructor_id,i1_0.instructor_name,i1_0.phone_number,i1_0.specialization from instructor i1_0 where i1_0.instructor_id=?
 ]]></system-out>
   </testcase>
-  <testcase name="Day8_testUpdateInstructor" classname="com.examly.springapp.SpringappApplicationTests" time="0.182">
+  <testcase name="Day8_testUpdateInstructor" classname="com.examly.springapp.SpringappApplicationTests" time="0.189">
     <system-out><![CDATA[Hibernate: select count(*) from instructor i1_0 where i1_0.instructor_id=?
 Hibernate: select i1_0.instructor_id,i1_0.instructor_name,i1_0.phone_number,i1_0.specialization from instructor i1_0 where i1_0.instructor_id=?
 Hibernate: update instructor set instructor_name=?,phone_number=?,specialization=? where instructor_id=?
 ]]></system-out>
   </testcase>
-  <testcase name="Day9_testPagination_PageNumberApplied" classname="com.examly.springapp.SpringappApplicationTests" time="0.01">
-    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageNumberApplied(SpringappApplicationTests.java:754)
-]]></failure>
-    <system-out><![CDATA[
-MockHttpServletRequest:
-      HTTP Method = GET
-      Request URI = /api/instructors/page/0/5
-       Parameters = {}
-          Headers = [Accept:"application/json"]
-             Body = null
-    Session Attrs = {}
+  <testcase name="Day9_testPagination_PageNumberApplied" classname="com.examly.springapp.SpringappApplicationTests" time="0.028">
+    <system-out><![CDATA[Hibernate: select i1_0.instructor_id,i1_0.instructor_name,i1_0.phone_number,i1_0.specialization from instructor i1_0 limit ?,?
+2025-12-18T14:10:31.018Z  WARN 3603 --- [           main] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
 
-Handler:
-             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = org.springframework.web.servlet.resource.NoResourceFoundException
-
-ModelAndView:
-        View name = null
-             View = null
-            Model = null
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 404
-    Error message = No static resource api/instructors/page/0/5.
-          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
-     Content type = null
-             Body = 
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
 ]]></system-out>
   </testcase>
-  <testcase name="Day9_testPagination_PageSizeApplied" classname="com.examly.springapp.SpringappApplicationTests" time="0.006">
-    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_PageSizeApplied(SpringappApplicationTests.java:764)
-]]></failure>
-    <system-out><![CDATA[
-MockHttpServletRequest:
-      HTTP Method = GET
-      Request URI = /api/instructors/page/1/10
-       Parameters = {}
-          Headers = [Accept:"application/json"]
-             Body = null
-    Session Attrs = {}
-
-Handler:
-             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = org.springframework.web.servlet.resource.NoResourceFoundException
-
-ModelAndView:
-        View name = null
-             View = null
-            Model = null
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 404
-    Error message = No static resource api/instructors/page/1/10.
-          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
-     Content type = null
-             Body = 
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
+  <testcase name="Day9_testPagination_PageSizeApplied" classname="com.examly.springapp.SpringappApplicationTests" time="0.014">
+    <system-out><![CDATA[Hibernate: select i1_0.instructor_id,i1_0.instructor_name,i1_0.phone_number,i1_0.specialization from instructor i1_0 limit ?,?
+Hibernate: select count(i1_0.instructor_id) from instructor i1_0
 ]]></system-out>
   </testcase>
-  <testcase name="Day9_testPagination_SortingPresent" classname="com.examly.springapp.SpringappApplicationTests" time="0.004">
-    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_SortingPresent(SpringappApplicationTests.java:774)
-]]></failure>
-    <system-out><![CDATA[
-MockHttpServletRequest:
-      HTTP Method = GET
-      Request URI = /api/instructors/page/0/5
-       Parameters = {}
-          Headers = [Accept:"application/json"]
-             Body = null
-    Session Attrs = {}
-
-Handler:
-             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = org.springframework.web.servlet.resource.NoResourceFoundException
-
-ModelAndView:
-        View name = null
-             View = null
-            Model = null
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 404
-    Error message = No static resource api/instructors/page/0/5.
-          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
-     Content type = null
-             Body = 
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
+  <testcase name="Day9_testPagination_SortingPresent" classname="com.examly.springapp.SpringappApplicationTests" time="0.013">
+    <system-out><![CDATA[Hibernate: select i1_0.instructor_id,i1_0.instructor_name,i1_0.phone_number,i1_0.specialization from instructor i1_0 limit ?,?
 ]]></system-out>
   </testcase>
-  <testcase name="Day9_testPagination_ContentArrayExists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004">
-    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_ContentArrayExists(SpringappApplicationTests.java:785)
-]]></failure>
-    <system-out><![CDATA[
-MockHttpServletRequest:
-      HTTP Method = GET
-      Request URI = /api/instructors/page/0/5
-       Parameters = {}
-          Headers = [Accept:"application/json"]
-             Body = null
-    Session Attrs = {}
-
-Handler:
-             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = org.springframework.web.servlet.resource.NoResourceFoundException
-
-ModelAndView:
-        View name = null
-             View = null
-            Model = null
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 404
-    Error message = No static resource api/instructors/page/0/5.
-          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
-     Content type = null
-             Body = 
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
+  <testcase name="Day9_testPagination_ContentArrayExists" classname="com.examly.springapp.SpringappApplicationTests" time="0.01">
+    <system-out><![CDATA[Hibernate: select i1_0.instructor_id,i1_0.instructor_name,i1_0.phone_number,i1_0.specialization from instructor i1_0 limit ?,?
 ]]></system-out>
   </testcase>
-  <testcase name="Day9_testPagination_TotalElementsExists" classname="com.examly.springapp.SpringappApplicationTests" time="0.004">
-    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_TotalElementsExists(SpringappApplicationTests.java:795)
-]]></failure>
-    <system-out><![CDATA[
-MockHttpServletRequest:
-      HTTP Method = GET
-      Request URI = /api/instructors/page/0/5
-       Parameters = {}
-          Headers = [Accept:"application/json"]
-             Body = null
-    Session Attrs = {}
-
-Handler:
-             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = org.springframework.web.servlet.resource.NoResourceFoundException
-
-ModelAndView:
-        View name = null
-             View = null
-            Model = null
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 404
-    Error message = No static resource api/instructors/page/0/5.
-          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
-     Content type = null
-             Body = 
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
+  <testcase name="Day9_testPagination_TotalElementsExists" classname="com.examly.springapp.SpringappApplicationTests" time="0.012">
+    <system-out><![CDATA[Hibernate: select i1_0.instructor_id,i1_0.instructor_name,i1_0.phone_number,i1_0.specialization from instructor i1_0 limit ?,?
 ]]></system-out>
   </testcase>
-  <testcase name="Day9_testPagination_TotalPagesExists" classname="com.examly.springapp.SpringappApplicationTests" time="0.005">
-    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day9_testPagination_TotalPagesExists(SpringappApplicationTests.java:805)
-]]></failure>
-    <system-out><![CDATA[
-MockHttpServletRequest:
-      HTTP Method = GET
-      Request URI = /api/instructors/page/0/5
-       Parameters = {}
-          Headers = [Accept:"application/json"]
-             Body = null
-    Session Attrs = {}
-
-Handler:
-             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = org.springframework.web.servlet.resource.NoResourceFoundException
-
-ModelAndView:
-        View name = null
-             View = null
-            Model = null
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 404
-    Error message = No static resource api/instructors/page/0/5.
-          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
-     Content type = null
-             Body = 
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
+  <testcase name="Day9_testPagination_TotalPagesExists" classname="com.examly.springapp.SpringappApplicationTests" time="0.01">
+    <system-out><![CDATA[Hibernate: select i1_0.instructor_id,i1_0.instructor_name,i1_0.phone_number,i1_0.specialization from instructor i1_0 limit ?,?
 ]]></system-out>
   </testcase>
-  <testcase name="Day10_testAddCourse" classname="com.examly.springapp.SpringappApplicationTests" time="0.017">
+  <testcase name="Day10_testAddCourse" classname="com.examly.springapp.SpringappApplicationTests" time="0.02">
     <system-out><![CDATA[Hibernate: select next_val as id_val from course_seq for update
 Hibernate: update course_seq set next_val= ? where next_val=?
 Hibernate: insert into course (course_name,description,duration,price,course_id) values (?,?,?,?,?)
 ]]></system-out>
   </testcase>
-  <testcase name="Day10_testGetAllCourses" classname="com.examly.springapp.SpringappApplicationTests" time="0.007">
+  <testcase name="Day10_testGetAllCourses" classname="com.examly.springapp.SpringappApplicationTests" time="0.009">
     <system-out><![CDATA[Hibernate: select c1_0.course_id,c1_0.course_name,c1_0.description,c1_0.duration,c1_0.price from course c1_0
 ]]></system-out>
   </testcase>
-  <testcase name="Day10_testGetCourseById" classname="com.examly.springapp.SpringappApplicationTests" time="0.006">
+  <testcase name="Day10_testGetCourseById" classname="com.examly.springapp.SpringappApplicationTests" time="0.009">
     <system-out><![CDATA[Hibernate: select c1_0.course_id,c1_0.course_name,c1_0.description,c1_0.duration,c1_0.price from course c1_0 where c1_0.course_id=?
 ]]></system-out>
   </testcase>
-  <testcase name="Day10_testUpdateCourse" classname="com.examly.springapp.SpringappApplicationTests" time="0.013">
+  <testcase name="Day10_testUpdateCourse" classname="com.examly.springapp.SpringappApplicationTests" time="0.017">
     <system-out><![CDATA[Hibernate: select count(*) from course c1_0 where c1_0.course_id=?
 Hibernate: select c1_0.course_id,c1_0.course_name,c1_0.description,c1_0.duration,c1_0.price from course c1_0 where c1_0.course_id=?
 Hibernate: update course set course_name=?,description=?,duration=?,price=? where course_id=?
 ]]></system-out>
   </testcase>
-  <testcase name="Day10_testAddStudent" classname="com.examly.springapp.SpringappApplicationTests" time="0.019">
+  <testcase name="Day10_testAddStudent" classname="com.examly.springapp.SpringappApplicationTests" time="0.021">
     <system-out><![CDATA[Hibernate: select next_val as id_val from student_seq for update
 Hibernate: update student_seq set next_val= ? where next_val=?
 Hibernate: insert into student (address,email,phone_number,student_name,student_id) values (?,?,?,?,?)
 ]]></system-out>
   </testcase>
-  <testcase name="Day10_testGetAllStudents" classname="com.examly.springapp.SpringappApplicationTests" time="0.007">
+  <testcase name="Day10_testGetAllStudents" classname="com.examly.springapp.SpringappApplicationTests" time="0.01">
     <system-out><![CDATA[Hibernate: select s1_0.student_id,s1_0.address,s1_0.email,s1_0.phone_number,s1_0.student_name from student s1_0
 ]]></system-out>
   </testcase>
-  <testcase name="Day10_testGetStudentById" classname="com.examly.springapp.SpringappApplicationTests" time="0.005">
+  <testcase name="Day10_testGetStudentById" classname="com.examly.springapp.SpringappApplicationTests" time="0.011">
     <system-out><![CDATA[Hibernate: select s1_0.student_id,s1_0.address,s1_0.email,s1_0.phone_number,s1_0.student_name from student s1_0 where s1_0.student_id=?
 ]]></system-out>
   </testcase>
-  <testcase name="Day10_testUpdateStudent" classname="com.examly.springapp.SpringappApplicationTests" time="0.012">
+  <testcase name="Day10_testUpdateStudent" classname="com.examly.springapp.SpringappApplicationTests" time="0.022">
     <system-out><![CDATA[Hibernate: select count(*) from student s1_0 where s1_0.student_id=?
 Hibernate: select s1_0.student_id,s1_0.address,s1_0.email,s1_0.phone_number,s1_0.student_name from student s1_0 where s1_0.student_id=?
 Hibernate: update student set address=?,email=?,phone_number=?,student_name=? where student_id=?
 ]]></system-out>
   </testcase>
-  <testcase name="Day11_testGetCoursesByInstructor" classname="com.examly.springapp.SpringappApplicationTests" time="0.005">
+  <testcase name="Day11_testGetCoursesByInstructor" classname="com.examly.springapp.SpringappApplicationTests" time="0.024">
     <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day11_testGetCoursesByInstructor(SpringappApplicationTests.java:923)
 ]]></failure>
@@ -578,7 +355,7 @@ MockHttpServletResponse:
           Cookies = []
 ]]></system-out>
   </testcase>
-  <testcase name="Day12_testGetCoursesByLevel" classname="com.examly.springapp.SpringappApplicationTests" time="0.004">
+  <testcase name="Day12_testGetCoursesByLevel" classname="com.examly.springapp.SpringappApplicationTests" time="0.006">
     <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel(SpringappApplicationTests.java:934)
 ]]></failure>
@@ -620,7 +397,7 @@ MockHttpServletResponse:
           Cookies = []
 ]]></system-out>
   </testcase>
-  <testcase name="Day12_testGetStudentsByEmail" classname="com.examly.springapp.SpringappApplicationTests" time="0.004">
+  <testcase name="Day12_testGetStudentsByEmail" classname="com.examly.springapp.SpringappApplicationTests" time="0.005">
     <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetStudentsByEmail(SpringappApplicationTests.java:946)
 ]]></failure>
@@ -662,7 +439,7 @@ MockHttpServletResponse:
           Cookies = []
 ]]></system-out>
   </testcase>
-  <testcase name="Day12_testGetCoursesByLevel_NotFound" classname="com.examly.springapp.SpringappApplicationTests" time="0.003">
+  <testcase name="Day12_testGetCoursesByLevel_NotFound" classname="com.examly.springapp.SpringappApplicationTests" time="0.006">
     <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<204> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel_NotFound(SpringappApplicationTests.java:958)
 ]]></failure>
@@ -704,7 +481,7 @@ MockHttpServletResponse:
           Cookies = []
 ]]></system-out>
   </testcase>
-  <testcase name="Day12_testGetInstructorBySpecialization" classname="com.examly.springapp.SpringappApplicationTests" time="0.003">
+  <testcase name="Day12_testGetInstructorBySpecialization" classname="com.examly.springapp.SpringappApplicationTests" time="0.008">
     <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization(SpringappApplicationTests.java:968)
 ]]></failure>
@@ -746,7 +523,7 @@ MockHttpServletResponse:
           Cookies = []
 ]]></system-out>
   </testcase>
-  <testcase name="Day12_testGetInstructorBySpecialization_NotFound" classname="com.examly.springapp.SpringappApplicationTests" time="0.005">
+  <testcase name="Day12_testGetInstructorBySpecialization_NotFound" classname="com.examly.springapp.SpringappApplicationTests" time="0.006">
     <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response content expected:<No instructors found with specialization: Biology> but was:<>
 	at com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization_NotFound(SpringappApplicationTests.java:980)
 ]]></failure>
@@ -793,17 +570,17 @@ MockHttpServletResponse:
 	at com.examly.springapp.SpringappApplicationTests.Day13_test_exception_Directory_Exists(SpringappApplicationTests.java:986)
 ]]></failure>
   </testcase>
-  <testcase name="Day13_test_GlobalException_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002">
+  <testcase name="Day13_test_GlobalException_File_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003">
     <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day13_test_GlobalException_File_Exists(SpringappApplicationTests.java:992)
 ]]></failure>
   </testcase>
-  <testcase name="Day14_test_configuration_Directory_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002">
+  <testcase name="Day14_test_configuration_Directory_Exists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003">
     <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day14_test_configuration_Directory_Exists(SpringappApplicationTests.java:998)
 ]]></failure>
   </testcase>
-  <testcase name="Day15_testAOPLogFileExists" classname="com.examly.springapp.SpringappApplicationTests" time="0.002">
+  <testcase name="Day15_testAOPLogFileExists" classname="com.examly.springapp.SpringappApplicationTests" time="0.003">
     <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day15_testAOPLogFileExists(SpringappApplicationTests.java:1004)
 ]]></failure>
