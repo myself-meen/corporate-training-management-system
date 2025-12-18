@@ -1,48 +1,16 @@
 package com.examly.springapp.service;
-
 import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
-
 import com.examly.springapp.model.Instructor;
-import com.examly.springapp.repository.InstructorRepo;
+import org.springframework.data.domain.Page;
 
-@Service
+public interface InstructorService {
+    Instructor addInstructor(Instructor instructor);
+    List<Instructor> getAllInstructors();
+    Instructor getInstructorById(int id);
+    Instructor updateInstructor(int id, Instructor instructor);
+    void deleteInstructor(int id);
 
-public class InstructorService {
-    @Autowired
-    private InstructorRepo instructorRepo;
-    
-    public Instructor AddInstructor(Instructor instructor){
-        return instructorRepo.save(instructor);
-
-    }
-    public List<Instructor> getAllInstructors(){
-        return instructorRepo.findAll();
-    }
-    public Instructor getInstructorById(long instructorId){
-        return instructorRepo.findById(instructorId).orElseThrow();
-    }
-    
-   public Instructor updateInstructor(long instructorId, Instructor instructor){
-    if(instructorRepo.existsById(instructorId)){
-       instructor.setInstructorId(instructorId);
-       return instructorRepo.save(instructor);
-    }
-    throw new RuntimeException();
-
-
-   }
-     public Page<Instructor> getInstructorsWithPagination(int pageNo, int pageSize) {
-        Pageable pageable = PageRequest.of(pageNo, pageSize);
-        return instructorRepo.findAll(pageable);
-    }
-    
-
-
-    
+    Page<Instructor> getInstructorsWithPagination(int pageNo, int pageSize);
+    List<Instructor> getInstructorBySpecialization(String specialization);
 }
+

@@ -1,40 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 79, Failures: 12, Errors: 0, Skipped: 0, Time elapsed: 5.891 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
-com.examly.springapp.SpringappApplicationTests.Day6_test_InstructorController_Has_DeleteMapping  Time elapsed: 0.009 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: ❌ No @DeleteMapping method found in InstructorController ==> expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.Day6_test_InstructorController_Has_DeleteMapping(SpringappApplicationTests.java:407)
-
-com.examly.springapp.SpringappApplicationTests.Day6_testGetAllInstructors_StatusNoContent  Time elapsed: 0.162 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<204> but was:<200>
-	at com.examly.springapp.SpringappApplicationTests.Day6_testGetAllInstructors_StatusNoContent(SpringappApplicationTests.java:430)
-
-com.examly.springapp.SpringappApplicationTests.Day11_testGetCoursesByInstructor  Time elapsed: 0.024 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day11_testGetCoursesByInstructor(SpringappApplicationTests.java:923)
-
-com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel  Time elapsed: 0.006 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel(SpringappApplicationTests.java:934)
-
-com.examly.springapp.SpringappApplicationTests.Day12_testGetStudentsByEmail  Time elapsed: 0.005 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day12_testGetStudentsByEmail(SpringappApplicationTests.java:946)
-
-com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel_NotFound  Time elapsed: 0.006 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<204> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day12_testGetCoursesByLevel_NotFound(SpringappApplicationTests.java:958)
-
-com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization  Time elapsed: 0.008 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization(SpringappApplicationTests.java:968)
-
-com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization_NotFound  Time elapsed: 0.006 s  <<< FAILURE!
-java.lang.AssertionError: Response content expected:<No instructors found with specialization: Biology> but was:<>
-	at com.examly.springapp.SpringappApplicationTests.Day12_testGetInstructorBySpecialization_NotFound(SpringappApplicationTests.java:980)
-
-com.examly.springapp.SpringappApplicationTests.Day13_test_exception_Directory_Exists  Time elapsed: 0.003 s  <<< FAILURE!
+Tests run: 79, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 8.499 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+com.examly.springapp.SpringappApplicationTests.Day13_test_exception_Directory_Exists  Time elapsed: 0.008 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day13_test_exception_Directory_Exists(SpringappApplicationTests.java:986)
 
@@ -42,11 +10,11 @@ com.examly.springapp.SpringappApplicationTests.Day13_test_GlobalException_File_E
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day13_test_GlobalException_File_Exists(SpringappApplicationTests.java:992)
 
-com.examly.springapp.SpringappApplicationTests.Day14_test_configuration_Directory_Exists  Time elapsed: 0.003 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day14_test_configuration_Directory_Exists  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day14_test_configuration_Directory_Exists(SpringappApplicationTests.java:998)
 
-com.examly.springapp.SpringappApplicationTests.Day15_testAOPLogFileExists  Time elapsed: 0.003 s  <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day15_testAOPLogFileExists  Time elapsed: 0.004 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at com.examly.springapp.SpringappApplicationTests.Day15_testAOPLogFileExists(SpringappApplicationTests.java:1004)
 

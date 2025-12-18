@@ -1,16 +1,19 @@
 package com.examly.springapp.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import java.util.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.examly.springapp.model.Course;
-import com.examly.springapp.model.Course;
-import com.examly.springapp.model.Course;
-import com.examly.springapp.model.Course;
-import com.examly.springapp.repository.CourseRepo;
 import com.examly.springapp.service.CourseService;
 
 @RestController
@@ -20,45 +23,37 @@ public class CourseController {
     @Autowired
     private CourseService courseService;
 
-   @PostMapping
-    public ResponseEntity<Course> AddCourse(@RequestBody Course course) {
-        
-        return new ResponseEntity<>(courseService.AddCourse(course), HttpStatus.CREATED);
+    @PostMapping
+    public ResponseEntity<Course> add(@RequestBody Course c) {
+        return new ResponseEntity<>(courseService.addCourse(c), HttpStatus.CREATED);
     }
+
     @GetMapping
-    public ResponseEntity<List<Course>>getAllCourses(){
-        return new ResponseEntity<List<Course>>(courseService.getAllCourses(),HttpStatus.OK);
+    public ResponseEntity<List<Course>> getAll() {
+        return new ResponseEntity<>(courseService.getAllCourses(), HttpStatus.OK);
     }
-     @GetMapping("/{id}")
-    public ResponseEntity<Course> getCourseById(@PathVariable long id) {
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Course> getById(@PathVariable int id) {
         return new ResponseEntity<>(courseService.getCourseById(id), HttpStatus.OK);
-        
     }
+
     @PutMapping("/{id}")
-    public ResponseEntity<Course>updateCourse(@PathVariable long id, @RequestBody Course course){
-        return new ResponseEntity<>(courseService.updateCourse(id, course), HttpStatus.OK);
-
+    public ResponseEntity<Course> update(@PathVariable int id, @RequestBody Course c) {
+        return new ResponseEntity<>(courseService.updateCourse(id, c), HttpStatus.OK);
     }
 
-    // @GetMapping
-    // public List<Course> getAllCourses() {
-    //     return courseRepo.findAll();
-    // }
+    @GetMapping("/instructor/{id}")
+    public ResponseEntity<List<Course>> byInstructor(@PathVariable int id) {
+        return new ResponseEntity<>(courseService.getCoursesByInstructor(id), HttpStatus.OK);
+    }
 
-    // @GetMapping("/{id}")
-    // public Course getCourseById(@PathVariable long id) {
-    //     return courseRepo.findById(id).orElse(null);
-    // }
-
-    // @PutMapping("/{id}")
-    // public Course updateCourse(@PathVariable long id, @RequestBody Course course) {
-    //     course.setCourseId(id);
-    //     courseRepo.save(course);
-    //     return course;
-    // }
+    @GetMapping("/level/{level}")
+    public ResponseEntity<?> byLevel(@PathVariable String level) {
+        List<Course> list = courseService.getCoursesByLevel(level);
+        if (list.isEmpty()) {
+            return new ResponseEntity<>("No courses found at level: " + level, HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(list, HttpStatus.OK);
+    }
 }
-
-
-
-
-
