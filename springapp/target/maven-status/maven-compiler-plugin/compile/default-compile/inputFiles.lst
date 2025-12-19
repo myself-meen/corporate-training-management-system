@@ -4,6 +4,7 @@
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/InstructorController.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/ModuleController.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/StudentController.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/exception/GlobalExceptionHandler.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/model/Course.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/model/Enrollment.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/model/Instructor.java
